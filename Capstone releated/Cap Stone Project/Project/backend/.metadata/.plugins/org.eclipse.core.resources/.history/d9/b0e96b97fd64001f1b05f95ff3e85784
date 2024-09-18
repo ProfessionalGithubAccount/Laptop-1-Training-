@@ -1,0 +1,5 @@
+package com.capstone.CourseMicroservice.Controller;
+
+public class CourseController {
+
+}

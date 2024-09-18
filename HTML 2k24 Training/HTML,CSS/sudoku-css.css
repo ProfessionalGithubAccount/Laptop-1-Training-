@@ -1,0 +1,129 @@
+.mainrow{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin:100px;
+    padding:100px; */
+    justify-items: center;
+    align-items: center;
+    /* background-color: aqua; */
+    /* border:solid; */
+    width: fit-content;
+    /* border-width: 2px; */
+
+}
+#heading{
+    padding-left: 10%;
+    padding-right:10%;
+    
+}
+body{
+    padding-left: 30%;
+    padding-top: 3%;
+
+}
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+ 
+}
+.box{
+    /* display:grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* margin:100px;
+    padding:100px; */
+    justify-items: center;
+    align-items: center;
+    /* background-color: aqua; */
+    border:solid;
+    width: fit-content;
+    border-width: 2px;
+
+}
+.subrow{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: fit-content;    
+}
+.subcol{
+    display:grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-items: center;
+    align-items: center;
+    border:solid;
+    width: 40px;
+    height: 40px;
+    border-width: 0.1px;  
+
+}
+input{
+    width: 3em; /* Adjust to match your cell's dimensions */
+    height: 2em; /* Adjust to match your cell's dimensions */
+    text-align: center;
+    
+    /* font-size: 1em; */
+     /* Adjust to fit inside the input box */
+    border: 1px solid #000000; /* Optional: to match the cell border */
+    
+    /* box-sizing: border-box;  */
+    /* Ensures padding and border are included in the width and height */
+  }
+  
+/* 
+.mainrow2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin:100px;
+    padding:100px; */
+    /* background-color: rgb(53, 119, 186); */
+    /* border: solid;
+    justify-items: center;
+    align-items: center;
+    width: fit-content; */
+/* } 
+/* 
+.mainrow3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin:100px; */
+    /* padding:100px; */
+    /* background-color: rgb(150, 239, 138); */
+    /* border:solid;
+    width: fit-content; */
+/*} 
+.mr3box1{
+    border:solid;
+}
+.mr3box2{
+    border:solid;
+}
+.mr3box3{
+    border:solid;
+}
+
+
+.mr1box1{
+    border:solid;
+}
+.mr1box2{
+    border:solid;
+}
+.mr1box3{
+    border:solid;
+}
+
+
+.mr2box1{
+    border:solid;
+}
+.mr2box2{
+    border:solid;
+}
+.mr2box3{
+    border:solid;
+}*/

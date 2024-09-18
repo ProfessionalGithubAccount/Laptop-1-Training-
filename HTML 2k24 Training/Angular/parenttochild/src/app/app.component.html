@@ -1,0 +1,46 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<button (click)="run()">Good Boy</button>
+<div class="container">
+<h1> Parent Component</h1>
+<p>
+To send whatever is entered in the text field to child Component</p>
+<p>Enter the name:
+<input type="text" class="form-control" [(ngModel)]="EnterName" /> </p>
+<p>Enter the Age:
+<input type="text" class="form-control" [(ngModel)]="EnterAge" /></p>
+<p>Enter the Marital Status
+<input type="text" class="form-control" [(ngModel)]="EnterStatus" /></p>
+<p>
+<input 
+  type="button"
+  value="send"
+  (click)="transferData()"
+  class="btn btn primary"
+>
+</p>
+
+<app-home
+  [someName]="parentData1"  
+  [parentData2]="parentData2"
+  [parentData3]="parentData3"
+  >
+</app-home>
+
+<h4> Received data from child</h4>
+<app-about (sendData)="sendData($event)"></app-about>
+</div>
+
+
+
+
+
+
+
+

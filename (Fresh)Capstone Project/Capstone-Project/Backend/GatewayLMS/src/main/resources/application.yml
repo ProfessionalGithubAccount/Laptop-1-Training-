@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: GatewayLMS # This looks fine, it's the name of your application.
+
+  cloud:
+    gateway:
+      mvc:
+        routes: # This should be directly under `gateway`, not `mvc`
+          - id: lbservice-route
+            uri: lb://ASSIGNMENTSERVICE
+            predicates:
+              - Path=/assignments/**
+
+          - id: lbservice2-route
+            uri: lb://COURSESERVICE
+            predicates:
+              - Path=/courses/**
+
+          - id: lbservice3-route
+            uri: lb://USERMANAGEMENT
+            predicates:
+              - Path=/user/**
+
+    discovery:
+      locator:
+        enabled: true # Correct discovery configuration for routing via service discovery (Eureka)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # This exposes all management endpoints (use cautiously in production)
+
+server:
+  port: 5555

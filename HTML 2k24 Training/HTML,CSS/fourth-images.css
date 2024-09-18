@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+} 
+body{
+    font-size:28px;
+    background-color: black;
+    padding:10px;
+}
+
+.mainclass{
+    /* height:100vh; */
+    display:grid;
+    background-color: white;
+    padding: 20px;
+    /* padding:10px; */
+
+    /* Now the content is divided in to two parts ..rest the divs will automatically gets set */
+}
+
+.r1{
+
+    /* height: 500px; */
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    /* justify-items: center; */
+}
+
+    
+.box1{
+    background-color: aquamarine;
+    display:grid;
+    margin: 10px;
+    justify-items: center;
+}
+
+.box2{
+    background-color: bisque;
+    margin: 10px;
+    justify-items: center;
+}
+
+.box3{
+    background-color: rgb(202, 235, 255);
+    margin: 10px;
+    justify-items: center;
+}
+.box4{
+    background-color: rgb(237, 218, 255);
+    margin: 10px;
+    justify-items: center;
+} 
+img{
+    object-fit:fill;
+    width:100%;
+    height:100%;
+}

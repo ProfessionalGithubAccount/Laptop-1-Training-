@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSEvents</title>
+    <script>
+        function sayGreetings(){
+            alert("OLA Coma Sava");
+        }
+
+        function showSeason(){
+            var month=new Date().getMonth();
+            if(month=="7"){//may be the months are statring from 0 ...also the month here given is string not numbers
+                alert("Monsoon season");
+            }
+        }
+
+        function green(){
+            document.getElementById("greendiv").style.backgroundColor="green";
+            document.getElementById("greendiv").style.color="white";
+            document.getElementById("greendiv").style.fontSize="90px";
+            document.getElementById("greendiv").style.fontFamily="Times New Roman";
+        }
+
+        
+        function blue(){
+            document.getElementById("bluediv").style.backgroundColor="blue";
+            document.getElementById("bluediv").style.color="white";
+            document.getElementById("bluediv").style.fontSize="90px";
+        }
+
+        function validate(){
+            alert("Validating..");
+            var u=document.login.username.value;
+            var p=document.login.password.value;
+            alert(u+p);
+            if(u.length<8 && p.length<8)
+                return true
+            else
+                return false
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form name="login" action="" method="post" onsubmit="return validate()">
+        <!--  whenever "get" method is used ..the data goes and visibile in url..therefore we use "post" -->
+        <fieldset>
+            <legend>Login Form </legend> 
+            <!-- The fieldset is for legend tag ..we need legend tag to create a box around the things kept -->
+            <label for="username">username</label>
+            <input type="text" name="username" id="uid"> <br/>
+            <label for="password">password</label>
+            <input type="password" name="password" id="pid"/>  <br/>
+            <input type="submit" value="any name to specify the submit which is an inbuilt thing"/>
+            <input type="reset" value="clear"/>
+        </fieldset>
+
+        <!-- <input type="button" value="greet" onclick="sayGreetings()"/>
+        <input type="button" value="season" onclick="showSeason()"/> 
+         We are giving slash at the end to say that no need of searching for any content ..just another way of closing the input tag 
+
+        <input type="button" value="green" onclick="green()"/>
+        <input type="button" value="blue" onclick="blue()"/>         -->
+    </form>
+
+    <div id="greendiv" class="greendiv">Hello<br/><br/><br/></div>
+    <div id="bluediv" class="bluediv">Hello<br/><br/><br/></div>
+</body>
+</html>

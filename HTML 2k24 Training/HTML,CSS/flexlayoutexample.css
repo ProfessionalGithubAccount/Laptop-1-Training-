@@ -1,0 +1,60 @@
+.container{
+    background-color: aliceblue;
+    display: flex; 
+    flex-wrap: wrap;   
+    height: 100vw;
+    width:100vw;
+    flex-direction:row;
+    align-content:center;
+    justify-content: center;
+    
+    /* This flex-wrap:wrap make sures that once a cell gets fill...the content goes to next ROW..not column..if removed it will give output in column fgashion ..like the ,ore information dded the more it goes down */
+}
+.container1{
+    background-color: rgb(252, 104, 13);
+    font-size: xx-large;
+    margin:10px;
+
+}
+.container2{
+    font-size: xx-large;
+    background-color: rgb(0, 129, 241);
+    margin:10px;
+}
+.container3{
+    background-color: rgb(90, 19, 255);
+    font-size: xx-large;
+    margin:10px;
+}
+.container4{
+    background-color: rgb(146, 21, 255);
+    font-size: xx-large;
+    margin:10px;
+}
+.container5{
+    background-color: rgb(18, 212, 28);
+    font-size: xx-large;
+    margin:10px;
+}
+.container6{
+    background-color: rgb(206, 255, 27);
+    font-size: xx-large;
+    margin:10px;
+}
+.container7{
+    background-color: rgb(207, 252, 218);
+    font-size: xx-large;
+    margin:10px;
+}
+.container8{
+    background-color: rgb(255, 245, 186);
+    font-size: xx-large;
+    margin:10px;
+}
+.container9{
+    background-color: rgb(49, 225, 70);
+    font-size: xx-large;
+    margin:10px;
+}
+
+/* Instead of doing font-size:xx -large for every container manually ..we can keep .container>div  */

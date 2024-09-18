@@ -1,0 +1,56 @@
+@Controller
+@RestController
+@PostMapping
+@GetMapping
+@PutMapping
+@DeleteMapping
+@Primary
+@Configuration
+@Component-Scan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LandLine        vs       Mobile Phone 
+Only calls               Calls msgs banking etc 
+Only 1 or 2 games        many games
+Not portable or handy    portable 
+heavy                    light weight 
+Runs through cables      Runs through signals
+Can be used during emergencies Depends
+setup takes time          easy to setup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

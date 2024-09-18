@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Layout</title>
+    <link rel="stylesheet" href="sudoku-css.css">
+    <script src="sudoku-js.js"></script>
+</head>
+<body>
+    <h1 id="heading">Sudoku Game</h1>
+    <div class="mainrow">
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol">5</span>
+                <span class="subcol">3</span>
+                <span class="subcol">4</span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol">9</span>
+                <span class="subcol"><input type="text" inputmode="numeric" min="1" max="9" maxlength="1" class="sudoku-cell"></span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol">6</span>
+                <span class="subcol"><input type="text" inputmode="numeric" min="1" max="9" maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol">2</span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 6</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> 4</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+        </div>
+        
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol">9 </span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 8</span>
+                <span class="subcol"> 5</span>
+            </div>
+
+        </div>        
+    </div>
+
+
+    <div class="mainrow">
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> 2</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 9</span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"> 6</span>
+                <span class="subcol"> 1</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> 7</span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol"> 4</span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 5</span>
+                <span class="subcol"> 2</span>
+            </div>
+
+        </div>
+        
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> 6</span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol"> 1</span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+            </div>
+
+        </div>        
+    </div>
+
+
+    <div class="mainrow">
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"> 1</span>
+                <span class="subcol"> 4</span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 7</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol"> 7</span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"><input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"> </span>
+                <span class="subcol"> 9</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+
+        </div>
+        
+        <div class="box">
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 6</span>
+                <span class="subcol"> 9</span>
+            </div>
+
+            <div class="subrow">
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+                <span class="subcol"> 7</span>
+                <span class="subcol"> <input type="text"  inputmode="numeric"  maxlength="1" class="sudoku-cell"></span>
+            </div>
+        
+            <div class="subrow">
+                <span class="subcol"> 1</span>
+                <span class="subcol"> 2</span>
+                <span class="subcol"> 3</span>
+            </div>
+
+        </div>        
+    </div>
+    <div class="buttonContainer">
+        <button id="solveButton" onclick="solveSudoku()">Solve</button>
+        <button id="resetButton" onclick="clearGrid()">Reset</button>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+<body>
+    <div class="mainrow1">
+        <div class="mr1box1">
+            <div class="mr1b1-r1">
+                <span class="mr1b1-r1-c1"> 1</span>
+                <span class="mr1b1-r1-c2"> 2</span>
+                <span class="mr1b1-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr1b1-r2">
+                <span class="mr1b1-r2-c1"> 4</span>
+                <span class="mr1b1-r2-c2"> 5</span>
+                <span class="mr1b1-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr1b1-r3">
+                <span class="mr1b1-r3-c1"> 7</span>
+                <span class="mr1b1-r3-c2"> 8</span>
+                <span class="mr1b1-r3-c3"> 9</span>
+            </div>
+
+        </div>
+
+
+        <div class="mr1box2">
+            <div class="mr1b2-r1">
+                <span class="mr1b2-r1-c1"> 1</span>
+                <span class="mr1b2-r1-c2"> 2</span>
+                <span class="mr1b2-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr1b2-r2">
+                <span class="mr1b2-r2-c1"> 4</span>
+                <span class="mr1b2-r2-c2"> 5</span>
+                <span class="mr1b2-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr1b3-r3">
+                <span class="mr1b3-r3-c1"> 7</span>
+                <span class="mr1b3-r3-c2"> 8</span>
+                <span class="mr1b3-r3-c3"> 9</span>
+            </div>
+
+        </div>
+        
+
+        <div class="mr1box3">
+            <div class="mr1b3-r1">
+                <span class="mr1b3-r1-c1"> 1</span>
+                <span class="mr1b3-r1-c2"> 2</span>
+                <span class="mr1b3-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr1b3-r2">
+                <span class="mr1b3-r2-c1"> 4</span>
+                <span class="mr1b3-r2-c2"> 5</span>
+                <span class="mr1b3-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr1b3-r3">
+                <span class="mr1b3-r3-c1"> 7</span>
+                <span class="mr1b3-r3-c2"> 8</span>
+                <span class="mr1b3-r3-c3"> 9</span>
+            </div>
+
+        </div>        
+        
+    </div>
+
+
+
+    <div class="mainrow2">
+        <div class="mr2box1">
+            <div class="mr2b1-r1">
+                <span class="mr2b1-r1-c1"> 1</span>
+                <span class="mr2b1-r1-c2"> 2</span>
+                <span class="mr2b1-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr2b1-r2">
+                <span class="mr2b1-r2-c1"> 4</span>
+                <span class="mr2b1-r2-c2"> 5</span>
+                <span class="mr2b1-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr2b1-r3">
+                <span class="mr2b1-r3-c1"> 7</span>
+                <span class="mr2b1-r3-c2"> 8</span>
+                <span class="mr2b1-r3-c3"> 9</span>
+            </div>
+
+        </div>
+
+
+        <div class="mr2box2">
+            <div class="mr2b2-r1">
+                <span class="mr2b2-r1-c1"> 1</span>
+                <span class="mr2b2-r1-c2"> 2</span>
+                <span class="mr2b2-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr2b2-r2">
+                <span class="mr2b2-r2-c1"> 4</span>
+                <span class="mr2b2-r2-c2"> 5</span>
+                <span class="mr2b2-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr2b3-r3">
+                <span class="mr2b3-r3-c1"> 7</span>
+                <span class="mr2b3-r3-c2"> 8</span>
+                <span class="mr2b3-r3-c3"> 9</span>
+            </div>
+
+        </div>
+        
+
+        <div class="mr2box3">
+            <div class="mr2b3-r1">
+                <span class="mr2b3-r1-c1"> 1</span>
+                <span class="mr2b3-r1-c2"> 2</span>
+                <span class="mr2b3-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr2b3-r2">
+                <span class="mr2b3-r2-c1"> 4</span>
+                <span class="mr2b3-r2-c2"> 5</span>
+                <span class="mr2b3-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr2b3-r3">
+                <span class="mr2b3-r3-c1"> 7</span>
+                <span class="mr2b3-r3-c2"> 8</span>
+                <span class="mr2b3-r3-c3"> 9</span>
+            </div>
+
+        </div>        
+        
+    </div>    
+
+
+
+
+
+
+
+    <div class="mainrow3">
+        <div class="mr3box1">
+            <div class="mr3b1-r1">
+                <span class="mr3b1-r1-c1"> 1</span>
+                <span class="mr3b1-r1-c2"> 2</span>
+                <span class="mr3b1-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr3b1-r2">
+                <span class="mr3b1-r2-c1"> 4</span>
+                <span class="mr3b1-r2-c2"> 5</span>
+                <span class="mr3b1-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr3b1-r3">
+                <span class="mr3b1-r3-c1"> 7</span>
+                <span class="mr3b1-r3-c2"> 8</span>
+                <span class="mr3b1-r3-c3"> 9</span>
+            </div>
+
+        </div>
+
+
+        <div class="mr3box2">
+            <div class="mr3b2-r1">
+                <span class="mr3b2-r1-c1"> 1</span>
+                <span class="mr3b2-r1-c2"> 2</span>
+                <span class="mr3b2-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr3b2-r2">
+                <span class="mr3b2-r2-c1"> 4</span>
+                <span class="mr3b2-r2-c2"> 5</span>
+                <span class="mr3b2-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr3b3-r3">
+                <span class="mr3b3-r3-c1"> 7</span>
+                <span class="mr3b3-r3-c2"> 8</span>
+                <span class="mr3b3-r3-c3"> 9</span>
+            </div>
+
+        </div>
+        
+
+        <div class="mr3box3">
+            <div class="mr3b3-r1">
+                <span class="mr3b3-r1-c1"> 1</span>
+                <span class="mr3b3-r1-c2"> 2</span>
+                <span class="mr3b3-r1-c3"> 3</span>
+            </div>
+
+            <div class="mr3b3-r2">
+                <span class="mr3b3-r2-c1"> 4</span>
+                <span class="mr3b3-r2-c2"> 5</span>
+                <span class="mr3b3-r2-c3"> 6</span>
+            </div>
+        
+            <div class="mr3b3-r3">
+                <span class="mr3b3-r3-c1"> 7</span>
+                <span class="mr3b3-r3-c2"> 8</span>
+                <span class="mr3b3-r3-c3"> 9</span>
+            </div>
+
+        </div>        
+        
+    </div>        
+
+</body> -->

@@ -1,0 +1,49 @@
+Sent by Copilot:
+To deploy a code editor on AWS that only shows the output of the code written, you can follow these general steps:
+
+Choose a Code Editor: Select a web-based code editor that you want to deploy, such as Ace Editor or CodeMirror.
+Set Up Your AWS Environment:
+Create an EC2 instance or use AWS Lambda for serverless deployment.
+Ensure that the CodeDeploy agent is installed on your instances if using EC21.
+Prepare Your Application:
+Write a simple web application that uses the code editor. The application should take the code input, execute it, and return the output.
+Use containers like Docker if you prefer an isolated environment.
+Store Your Code:
+Upload your application code to a repository, such as GitHub, or directly to Amazon S32.
+Automate Deployment:
+Use AWS CodeDeploy to automate the deployment of your application to the AWS environment1.
+Set up a CI/CD pipeline with AWS CodePipeline to automate the build and deployment process.
+Configure Output Display:
+Modify your application to execute the code in a secure environment and display only the output.
+Ensure proper error handling and security measures are in place to prevent misuse.
+Remember to configure your AWS services correctly and secure your application against unauthorized access. For detailed instructions, you can refer to the AWS CodeDeploy documentation1 and other AWS resources that provide step-by-step guides on deploying applications.
+
+If you need a more specific example or help with code, feel free to ask!
+
+
+----------------------------------------------------------------------------------------
+Open source containerization platform 
+Pack all your application and all its dependencies into a standardised unit called "container"
+
+jar--(build)--Images--(Run as)--Containers
+no os
+no infrastructure
+Runs on any machine which has docker 
+
+
+Run docker desktop
+Create a file with no extension named "dockerfile"
+
+docker build .
+docker images
+docker run <ImageId>
+
+docker build -t <ImageName>:<Version/tag>
+docker run -d -p 9000:8080 <ImageId>:<Version/tag>
+After the above command we can see the container id 
+
+docker exec -it <ContainerId> bash
+
+docker ps -a
+
+docker login

@@ -1,0 +1,12 @@
+spring:
+ application:
+  name: eurekaregistryservice
+server:
+ port: 8761 #Donot change the portnumber ..keep it 8761(for registry) #Registry should have port number 8761...service can have any port number 
+ 
+eureka:
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+ server:
+   waitTimeInMsWhenSyncEmpty: 0

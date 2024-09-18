@@ -1,0 +1,7 @@
+This is a component created which will be having 4 forms (not working ..so doing the codes explained)
+1) Login
+2) Signup or registration
+3) Forgot passsword
+4) change passsword
+
+This same can be used for our project

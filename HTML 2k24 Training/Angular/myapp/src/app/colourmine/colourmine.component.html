@@ -1,0 +1,22 @@
+<div [style]="bgcolormine">
+<p >colourmine works!</p>
+<button (click)="colurchange()">change</button>
+</div>
+<!-- <h1> Colour child component</h1>
+<h2> from parent the value we got is {{title}}</h2>
+<ng-content></ng-content> -->
+<!-- <div class="container">
+    <p>Color Component! </p>
+    <input type="text" (keydown)="keyCapture($event.key)">
+    <h2>{{title}}</h2>
+    <h2><button (click)="sendMessage()">Click</button></h2>
+</div> -->
+<div class="container">
+    <p>Color Component! </p>
+    <input type="text" (keydown)="keyCapture($event.key)">
+    <h2>{{title}}</h2>
+    <h2><button (click)="sendMessage()">Click</button></h2>
+    <h1>From Parent{{title}}</h1>
+    <h2>For After Content Init</h2>
+    <ng-content></ng-content>
+</div>

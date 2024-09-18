@@ -1,0 +1,26 @@
+#profilepic{
+    border-radius: 100%;
+    background-color: rgb(236, 95, 6);
+    align-self: center;
+    box-shadow: 100;
+}
+#aboutme{
+    border-radius: 10% ;
+    align-self: center;
+    box-shadow: rgb(138, 138, 138) 10px 10px;
+    margin: 30px;
+}
+body{
+    background-size: cover;
+    text-emphasis-color: white; 
+}
+.section1{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.customnavbar{
+    margin-left:200px;
+    margin-right:200px;
+    background-size: cover;
+    background-color: rgb(255, 231, 143);
+}

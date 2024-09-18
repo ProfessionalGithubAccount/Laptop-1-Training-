@@ -1,0 +1,23 @@
+spring:
+ application:
+  name: OAuthSecurity
+
+server:
+   port: 9090
+
+security:
+   oauth2:
+     client:
+        clientId: 495588463070761
+        clientsecretId: 9a62128b10d5a8bc2e9ec7f17c3a56de
+        accessTokenUri: https://graph.facebook.com/oauth/access_token
+        userAuthorizationUri: https://www.facebook.com/dialog/oauth
+        tokenName: oauth_token
+        authenticationScheme: query
+        clientAuthenticationScheme: form
+     resource:
+        userInfoUri: https://graph.facebook.com/me
+        
+        
+# The above code is for the facebook login authentication
+#The clientId and ClientSeceretId are bharats facebook

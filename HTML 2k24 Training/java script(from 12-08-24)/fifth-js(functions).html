@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//Json Objects
+var jsonRef={
+    data:[
+        {company:"Google",location:"Sanfransisco",country:"USA"},
+        {company:"infosys",location:"Bengaluru",country:"India"},
+        {company:"TCS",location:"Provai",country:"India"},
+        {company:"UST",location:"Trivandrum",country:"India"},
+        {company:"Nvidea",location:"Santaclara",country:"USA"},
+    ]
+}
+
+console.log(jsonRef.data)
+console.log(jsonRef.data[0])
+
+jsonRef.data[0].language="Spanish"
+console.log(jsonRef.data[0]
+)
+
+jsonRef.data.forEach(element => {
+    document.write(`<h3>the ${element.company} hq is currently loacted in the ${element.location},${element.country}</h3>`)
+});
+document.write(`<h2>USA Comapanies</h2>`)
+jsonRef.data.filter((e) => e.country == "USA" ).forEach((element) =>{
+    document.write(`<h3>the ${element.company} hq is currently loacted in the ${element.location},${element.country}</h3>`)  
+})
+ 
+document.write(`<h2>India Comapanies</h2>`)
+jsonRef.data.filter((e) => e.country == "India" ).forEach((element) =>{
+    document.write(`<h3>the ${element.company} hq is currently loacted in the ${element.location},${element.country}</h3>`)  
+})
+ 
+//try to use arrow functions and apply some basic functions like companies in  india etc 
+
+
+jsonRef.data.forEach((ele)=>console.log(ele))
+// //Objects in javascript
+// var movie ={name:"titanic",year:1997}
+
+// console.log(movie.name)
+// console.log(movie.year)
+// movie.hero="jack"
+// console.log(movie.hero)
+
+// //call back functions
+// const isEven=(n)=>{
+//     return n%2==0;
+// };
+
+
+// let printMsg=(someFunction,num) => {
+//    const isNumEven=someFunction(num);
+//    console.log(`${num} is a even number : ${isNumEven}`);
+
+// };
+
+// printMsg(isEven,18)
+
+
+
+        // //called as arrow function
+        // const square2= (n) => {
+        //     return n*n;
+        // };
+
+        // var r=square2(9);
+        // alert(r);
+
+
+        // const squareing=function(n){
+        //     return n*n;
+        // };
+
+        // let s =squareing;
+        // var result = s(78);
+        // console.log(result);
+
+
+
+
+//         var data=[3,4,9,78,34,55];//global variables..therefore mo need to use any return inside function
+
+
+//         const data1=[3,4,5,8,10,300,24,2,20,2.0]
+//         const filteredData=data1.filter((n)=>{
+//             return n<10;
+//         })
+//         console.log(filteredData)
+
+
+//         //map means transform..i.e applying transformation function
+//         const members=["john","joel","sam","nancy"];
+//         const nominees=members.map((member)=>{
+//             return member+"#joined the contest";
+//         })
+//         console.log(nominees);
+// //For output open the console in browswer
+
+
+// const nums=[2,3,4,5,6,7]
+// const sums=nums.reduce((accumulator,curVal)=>{
+//     console.log(curVal ,accumulator)
+//     return accumulator+curVal;
+// })
+
+// console.log(sums)
+
+
+//In accumalator u will have total sum till that iteration...we can give any name
+
+
+
+
+        // var cumSum=0;
+
+        // var num=parseInt(prompt("Enter a number for factorial")) //parseInt is camel case not starts with capital
+        // function factorial(n){
+        //     var i=1;
+        //     var fact=1;
+        //     while(i<=n){
+        //         fact*=i;
+        //         i++;
+        //     }
+        //     return fact;
+        // }
+        // alert(factorial(num))
+
+
+        // var total=0;
+        // function sumData(){
+        //     // let total=0;
+        //     for(var i in data){
+        //         total+=data[i] //nope here i is not the 3,,4,9,78,34..it is taking index only dontknow why
+        //     }
+        //    // alert(total);
+            
+        //         // data.forEach((item)=>{
+        //         //     cumSum +=item;
+        //         // })
+        //         // alert(cumSum);
+            
+        // }
+        // sumData();//Function call...very important..First write function definiton..then call the function using function call
+        // alert(total);
+    </script>
+</body>
+</html>

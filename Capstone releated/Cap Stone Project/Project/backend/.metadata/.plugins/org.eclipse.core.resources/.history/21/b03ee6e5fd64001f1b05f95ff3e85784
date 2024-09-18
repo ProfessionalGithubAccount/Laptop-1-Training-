@@ -1,0 +1,5 @@
+package com.capstone.AssignmentMicroservice.Service;
+
+public class AssignmentService {
+
+}

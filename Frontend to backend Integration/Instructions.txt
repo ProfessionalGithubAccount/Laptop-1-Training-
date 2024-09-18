@@ -1,0 +1,22 @@
+1) first Run the backend code in intellij or sts
+2) then ng serve the frontend ..by oeneing the cmd inside frontend folder
+3) Add or post the products by giving the id,etc
+4) for deleting we give the id
+5) similarly we execute or check for other methods
+
+
+It even have the security part implemented..
+i.e we created token component adn token service
+6) When opened and want to see the security...first give foo and foo for username and password 
+7) Make sure the jwt code is running
+8) Now press authenticate button
+9) then click greet or admin buttons and check in inspect
+U can see a jwt token gets generated ....after we click authentciate button
+
+No need of any project or all projects to be in same folder..as we are using localhost url's for accesing
+
+
+There in github ...github wasnt able to take the files so deleted the node modules(22k files) ..so if u want it to work ..make sure u do 
+npm update...to install all npm modules
+
+but be careful as the angular version u have ..and the cloned code version is different then u r code wont work as functionalities of modules gets changed in new versions

@@ -1,0 +1,100 @@
+<div class="container" style="display: flex;" >
+  <span>
+<div  style="background-color:rgb(171, 241, 253); padding:10px;">
+  <p>Product Id:-{{productid}}</p>
+  <p>Name of the product:- {{productname}}</p>
+  <p>Quantity available:-{{stock}}</p>
+  <p>Description:-{{desc}}</p>
+  <input type="text" [(ngModel)]="orderquantity" #input>
+  <button (click)="printOrder(input.value)">click</button>
+  <div *ngIf="stock > orderquantity;else elsetemplateKausthub">
+    available
+    <!-- The meaning here is if stock(the given variable in .ts)greater than orderquantity (orderquantity) then it wiill show avaible..else it will execute the elseKausthub(see below line) -->
+  </div>
+  <ng-template #elsetemplateKausthub>Not available</ng-template>
+  <!-- Binding the order qunatity to the input tag -->
+  <p> Order Quantity:-{{orderquantity}}</p>
+  <div [innerHTML]="orderquantity"></div> 
+</div>
+<!-- for above code if we write html code inside the input of our website it will work ..it will show the output of the code -->
+{{orderDate | date :"dd/MMM/yyyy"}}
+<div *ngFor="let itemstemp of listtemp">
+  The product is {{itemstemp.prod}} is of cost {{itemstemp.price}}
+</div>
+
+<div *ngFor="let product of products; index as i ; even as isEven">
+  <!-- even is a inbuilt function ...isEven is user defined variable -->
+  <span style="color: brown;" *ngIf="isEven; else myelsePart">
+
+    {{i}}
+    {{product.productId}}
+    {{product.description}}
+    {{product.price}}
+  </span>
+  <ng-template #myelsePart>
+    <div style="color: blue;">
+    {{i}}
+    {{product.productId}}
+    {{product.description}}
+    {{product.price}}
+    </div>
+  </ng-template>
+</div>
+
+
+<!-- Different way of styling  -->
+<div *ngFor="let product of products; index as i ; even as isEven;odd as isOdd"> <!--Important to write this line to acess both if and else..even as isEven;odd as isOdd -->
+  <span [style.background-color]="evenColor" *ngIf="isEven">
+
+    {{i}}
+    {{product.productId}}
+    {{product.description}}
+    {{product.price}}
+  </span>
+  <span *ngIf="isOdd" [style.background-color]="oddColor">
+    {{i}}
+    {{product.productId}}
+    {{product.description}}
+    {{product.price}}
+  </span>
+</div>
+
+<div style="border:solid 2px green">
+<app-colourmine></app-colourmine> 
+</div>
+</span>
+<span>
+<div style="background-color:rgb(150, 227, 244);margin:100px;padding:100px">
+  <app-datacomponent></app-datacomponent>
+</div>
+</span>
+
+
+<!-- <div style="background-color:rgb(150, 227, 244);margin:100px;padding:100px">
+  <app-forms></app-forms>
+</div> -->
+<div >
+  <app-newforms></app-newforms>
+</div>
+<div>
+  <app-reactive></app-reactive>
+</div>
+<div>
+  <h1>Form Builder</h1>
+
+  
+  <app-formbuilder><h1></h1></app-formbuilder>
+</div>
+</div>
+
+<!-- <h1> From parent Component trying to implement colourmine (child) component</h1>
+<app-colourmine [title]="title">This is demonstarting after content init</app-colourmine> -->
+
+<div class="container">
+  <p>Child Component! </p>
+  <input type="text" (keydown)="keyCapture($event.key)">
+  <h2>{{title}}</h2>
+  <h2><button (click)="sendMessage()">Click</button></h2>
+</div>
+<div><app-colourmine [title]="title">This is demostrating After Content Init</app-colourmine></div>
+ 

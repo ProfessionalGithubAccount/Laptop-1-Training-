@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplciation Table</title>
+</head>
+<body>
+    
+    <script>
+    
+        document.write("<table border=1>");
+        document.write("<tr><th> &nbsp;</th>")
+        // document.write("<tr>")
+        for(let i=1;i<=100;i++){
+            document.write("<th>"+i+"</th>")
+        }
+        document.write("</tr>")
+        for(let i=1;i<=100;i++){
+            document.write("<tr>")
+            document.write("<th>"+i+"</th>")
+            for(let j=1;j<=100;j++){
+                document.write("<td>"+i*j+" </td>");
+            }
+            document.write("</tr>");
+        }
+    
+    </script>
+    
+</body>
+</html>

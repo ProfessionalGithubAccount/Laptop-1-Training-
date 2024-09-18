@@ -1,0 +1,94 @@
+/* *{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-size:28px;
+    background-color: black;
+    padding:10px;
+}
+
+.mainclass{
+    height:100vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-content:center;
+    background-color: white;
+    padding:10px;
+
+    /* Now the content is divided in to two parts ..rest the divs will automatically gets set */
+/* }
+
+.r1{
+
+    height: 500px;
+    display:grid;
+}
+.r2{
+    height: 500px;
+    display:grid;
+     /* grid-template-columns:1fr 1fr;  */
+
+    /* }
+    
+    
+.box1{
+    background-color: aquamarine;
+}
+
+.box2{
+    background-color: bisque;
+}
+
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: blueviolet;
+} */
+
+/* We can use above code or below code ..anything works...also remove /* manually since the comments inthis are messing the ctrl + / */
+*{
+    margin:0px;
+    padding:0px;
+} 
+body{
+    font-size:28px;
+    background-color: black;
+    padding:10px;
+}
+
+.mainclass{
+    height:100vh;
+    display:grid;
+    background-color: white;
+    padding: 20px;
+    /* padding:10px; */
+
+    /* Now the content is divided in to two parts ..rest the divs will automatically gets set */
+}
+
+.r1{
+
+    /* height: 500px; */
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+    
+.box1{
+    background-color: aquamarine;
+    display:grid;
+}
+
+.box2{
+    background-color: bisque;
+}
+
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: blueviolet;
+} 

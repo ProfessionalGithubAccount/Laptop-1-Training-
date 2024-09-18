@@ -1,0 +1,110 @@
+<h3>Create a product</h3>
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label for="">ProductId</label>
+    <input type="text" class="form-control" id="productId" [(ngModel)]="prod.productId"
+    name="productId" minlength="8" required #tempvarname="ngModel" />
+  </div>
+  <div *ngIf="tempvarname.invalid && tempvarname.touched" class="alert">
+  <div *ngIf="tempvarname.errors?.['required']">ProductId is required</div>
+  <div *ngIf="tempvarname.errors?.['minlength']">ProductId must be at least 8 chars long</div>
+  </div>
+    
+
+    <div class="form-group">
+      <label for="">Brand</label>
+      <input type="text" class="form-control" id="brand" [(ngModel)]="prod.brand"
+      name="brand" required #temp1="ngModel" minlength="8"/>
+
+<div *ngIf="temp1.invalid && temp1.touched" class="alert">
+  <div *ngIf="temp1.errors?.['required']">Brand is required</div>
+  <div *ngIf="temp1.errors?.['minlength']">Brand must be at least 8 chars long</div>
+  </div>
+    </div>
+   
+    
+    <div class="form-group">
+      <label for="">quantity</label>
+      <input type="text" class="form-control" id="qty" [(ngModel)]="prod.qty"
+      name="qty"/>
+    </div> 
+    
+    <div class="form-group">
+      <label for="">Price</label>
+      <input type="text" class="form-control" id="price" [(ngModel)]="prod.price"
+      name="price"/>
+    </div>
+        
+    <div class="form-group">
+      <label for="">Description</label>
+      <input type="text" class="form-control" id="desc" [(ngModel)]="prod.description"
+      name="desc"/>
+    </div>
+    <button type="submit" >Submit</button>
+  </form>
+</div>
+
+
+
+
+
+<!-- <p>datacomponent works!</p>
+
+<div>
+  <p>Today is {{today | date}}</p>
+  <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+  <p>The time is {{today | date:'h:mm a z'}}</p>
+</div>
+
+<p>A: {{ a | currency }}</p>
+  
+
+<p>A: {{ a | currency: 'CAD' }}</p>
+
+
+<p>A: {{ a | currency: 'CAD' : 'code' }}</p>
+
+<p>B: {{ b | currency: 'CAD' : 'symbol' : '4.2-2' }}</p>
+
+
+<p>B: {{ b | currency: 'CAD' : 'symbol-narrow' : '4.2-2' }}</p>
+
+
+<p>B: {{ b | currency: 'CAD' : 'symbol' : '4.2-2' : 'fr' }}</p>
+
+
+<p>B: {{ b | currency: 'CLP' }}</p> -->
+
+
+<div >
+<div>
+    <h1> Product Query Table</h1>
+    <select ng-model="data.singleSelect" (change)="myFunction($event)">
+      <option value="Tata">Tata</option>
+      <option value="Wipro" >Wipro</option>
+      <option value="Tvs" >Tvs</option>
+      <option value="Reliance">Reliance</option>
+      <option value="Samsung" >samsung</option>
+      <option value="LG" >LG</option>
+      <option value="Crompton" >Crompton</option>
+    </select>
+  </div>
+    <div *ngFor="let pro of productData,index as i">
+      <div *ngIf="pro.brand==val" >
+        <h1>{{pro.brand}}</h1>
+        No. of Products {{countt}} 
+        ------------------------------------|<br>
+        |Brand Name:- {{pro.brand}}         |<br>
+        |ProductId:- {{pro.productId}}      |<br>
+        |Description:- {{pro.description}}  |<br>
+        |Quantity:- {{pro.qty}}             |<br> 
+        |Price:- {{pro.price}}              |<br>
+        ------------------------------------|
+
+  
+      </div>
+    </div>
+      
+  </div>
+  

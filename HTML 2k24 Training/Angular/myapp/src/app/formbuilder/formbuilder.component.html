@@ -1,0 +1,43 @@
+<p>formbuilder works!</p>
+<p>reactive works!</p>
+<h1> Product Form - Reactive </h1>
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <label for="">ProductId: </label>
+        <input type="text" formControlName="productid"/>
+
+        <label for="" >Brand</label>
+
+        <input type="text" formControlName="brand" required/>
+
+        <div formGroupName="description">
+            <label for="">Age:<input type="text" formControlName="age" /></label>
+            <label for="">
+                Seasons:<input type="text" formControlName="seasons" />
+            </label>
+        </div>
+
+        <!-- <input type="text" fromControlName="description"/> -->
+
+        <label for="qty">Quantity</label>
+        <input type="text" formControlName="qty" />
+
+        <label for="">Price</label>
+        <input type="text" formControlName="price"/>
+        <div formArrayName="suppliers">
+            <label for="">Suppliers</label>
+            <button (click)="addNewSupplier()"> Add New Supplier</button>
+
+            <div *ngFor="let supplier of suppliers.controls; let i=index">
+                <label for="">New Supplier:
+                    <input type="text" [formControlName]="i" />
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" [disabled]="!productForm.valid">Submit</button>
+        <!-- The above line of code make sures that the submit button is disabled when site is opened ..it will enbled when all field are enterd -->
+
+
+    </form>
+</div>

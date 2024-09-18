@@ -1,0 +1,11 @@
+package com.capstone.CourseMicroservice.Repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.capstone.CourseMicroservice.Entity.Course;
+
+
+public interface CourseRepository extends JpaRepository<Course, Long> {
+    List<Course> findTop5ByOrderByIdDesc();  

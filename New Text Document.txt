@@ -1,0 +1,56 @@
+27	284748	Garikapati Kausthub Rao	Ustjavabootan28@mml.local
+S8BiZ4nn	https://laas.makemylabs.in/wsm/USTJAVABOOTCANIL17072420240716095528?invitation_id=b50a699f-e0ac-4a6d-bf06-473643c8c245&context=True
+
+
+
+Exercises:-
+1) Put radio buttoons and change background colour of page when radio is selected 
+like this 5 exercises which uses all...every binding etc etc and what ever we learned till now 
+
+
+
+
+08/08
+Apply semantics(HTML5) and create the personal portfolio
+Apply div tags ad recreate what has been done (first.html)
+
+------------------------
+|1.Microservices
+|2.Security..what are the classes ,their roles,what order they are invoked
+|3.Fiegen client 
+|4.JWT
+|5.store project
+|6. Family app
+|7. servlets
+|8. Filters
+|
+|
+|
+|
+------------------------
+
+26-07-24
+1) Technical information about telecom industry
+2) Monday a small presentation on how circuit breaker works
+
+COmplete eggs apple ...
+Complete family 
+Complete portfolio
+tickets
+
+22-07-24
+1)Learn JSp and servelets in 1 week ...backbone of java web 
+2)most common headers to know in view of cross site  attack etc(go to owsap)
+..what should be there what should not be there so that we can prevent the attcks in the response and request
+3)locales ...give response in their own laguage using english letters...and also after that give in the local language letters only
+
+23-07-24
+1) get ready with curl
+2) Do jpa Mongodb
+
+24-07024
+1) Learn in one month maps and realtionships and associations ..(one to one ,one to many, many to many )
+2) What exactly is an endpoint
+3) throws vs throw ...when to use them 
+4) Checked vs nchecked exception
+5) How do u distinguish between mobile and landphone in terms of infrasturcture nd technology and prtocols etc

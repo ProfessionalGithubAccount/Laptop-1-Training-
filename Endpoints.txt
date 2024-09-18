@@ -1,0 +1,68 @@
+Usermanagement:
+
+1) GET    http://localhost:5555/user/professorlist
+2) GET    http://localhost:5555/user/professorlistbyemail/prof.tarak05@example.com
+3) POST   http://localhost:5555/user/registerprofessor  
+
+If registerstudent or registerprofessor not working ...keep create instead of update in the application.yml
+4) POST   http://localhost:5555/user/registerstudent
+5) GET    http://localhost:5555/user//professorprofileDetails/2      
+6) POST   http://localhost:5555/user/addProfessor
+7) GET    http://localhost:5555/user/gettotalprofessors
+8) PUT    http://localhost:5555/user/updateprofessor
+9) GET    http://localhost:5555/user/professor/2/courses
+
+
+ProfessorController.....ALL DONE
+RegistrationController...ALL DONEs
+UserController.....ALL DONE
+LoginController ...ALL DONE
+
+10) GET   http://localhost:5555/user/studentlist
+11) GET   http://localhost:5555/user/studentprofileDetails/1
+12) GET   http://localhost:5555/user/gettotalstudents
+13) PUT   http://localhost:5555/user/updatestudent    ......we cant update studnetID...just use stduentId to update other data
+14) GET   http://localhost:5555/user/{studentId}/courses
+15) GET   http://localhost:5555/user/byCourse/{courseId} 
+
+
+16) POST  http://localhost:5555/user/loginstudent   .....it returns the id
+17) POST  http://localhost:5555/user/loginprofessor .....it returns the id
+
+
+
+....again the register is not working
+
+Assignment Microservice
+
+
+
+Course Microservice
+1) GET   http://localhost:5555/courses/getAll
+2) POST  http://localhost:5555/courses/addCourse
+3) PUT   http://localhost:5555/courses/updateCourse
+4) GET   http://localhost:5555/courses/student/{studentId}
+5) GET   http://localhost:5555/courses/professor/{professorId}
+6) GET   http://localhost:5555/courses/showResources/{courseId}
+
+
+
+
+------------------------------------------------------------------------
+
+WORKING (After gateway)(In vm)
+1) POST    http://localhost:5555/user/registerstudent
+
+{
+  "courseIds": [101,102,103,1099],
+  "email": "tarak.surya@example.com",
+  "username": "tarak_surya",
+  "studentName": "tarak doe",
+  "mobile": "1234567890",
+  "gender": "Male",
+  "address": "123 Main Street",
+  "password": "123"
+}
+
+
+2)GET    http://localhost:5555/user/studentlist

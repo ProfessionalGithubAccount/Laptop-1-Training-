@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title> 
+</head>
+<script>
+    // var k=prompt("Enter location");
+    // alert(k);
+    // alert(typeof(k));
+
+    // var nu=9;
+    // alert(typeof(nu));
+
+    // var bol=true;
+    // var bol2=0;
+
+    // alert(typeof bol);
+    // alert(typeof bol2);
+    // //donot use the word "location" it  is keyword
+
+    // alert(0/0);//nan..means not a valid number 
+    // alert(9923/0);//infinity
+    // alert("10"/"10"); //will return 1
+    // alert("hello"/"hello") // will return nan
+
+    //first it will try to take a number out of the string ...if not found then it will give nan
+     
+
+    //data= //"true-->true"//"A10"-->true//0-->false//false-->false//true-->false //"hello" -->true//"100"--> false 
+    // nan==not a valid number ...therefore is nan checks if invalid or not..
+    // "100" is a valid number but isNaN checks if invalid or not ..therefore false since it isvalid number
+    //whereas "hello" is not a number at all...invalid number ...true for isNaN
+    //alert(isNaN(data))
+
+    //isNaN...first tries to convert the variable value to a number if converting then it will give false since isNaN is all about being invalid number...and if the conversion is not possible it will give true(since it will become invalid umber)
+    //therefore isNaN is performing the typecasting 
+    // but the Number.isNaN is directly (no typecasting) checking if given is NaN or not is NaN true else for all cases false
+
+    // data=10
+    // alert(Number.isNaN(data));//returns false
+
+    // data=NaN;
+    // alert(Number.isNaN(data))//Returns true 
+
+    // data=Number("hello")//since it cant type cast it will give NaN not true or false ..
+    // alert(data)//returns true ..sinc it is NaN
+    
+
+    document.write("Welcome to java script")
+    console.log("hello world")
+
+
+var str="kausthub"
+let str1="great"
+const str2="as always"
+// str2="ju"
+
+document.writeln(
+    "<h2>Hello my name is"+str+" i am "+str1+" "+str2
+)
+</script>
+
+
+
+<body>
+    
+</body>
+</html>

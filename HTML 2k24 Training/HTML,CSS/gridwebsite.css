@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:grid;
+    grid-template-areas:
+         "headingOwn headingOwn headingOwn"
+         "nav mainOwn aside"
+         "nav footer footer";
+    grid-template-rows:150px 1fr 70px;
+    row-gap:10px;
+    column-gap:10px;
+    background-color: #ebe7f7;
+}
+
+main{
+    grid-area:mainOwn;  
+    /* the name given for grid-area should be as same as wht we have given insid the body in css */
+    text-align:justify;
+}
+
+header{
+    grid-area:headingOwn;
+    /* the name given for grid-area should be as same as wht we have given insid the body in css */
+    background-color: rgb(11, 65, 244);
+}
+
+nav{
+    grid-area:nav;
+}
+
+header>nav{
+    display:block;
+}
+
+header > nav >a{
+    color:white;
+    float:right;    /*Till now the contents are one above the other in column wise...
+    now due to float:right it will go towards right ;*/
+    padding:15px 55px;
+}
+
+/* We need to manually for every screen size..max two to 4 screen sizes would be present */
+
+/* This below code is for responsiveness */
+@media screen and (max-width:768px) {
+    body{
+        grid-template-columns: 1fr;
+        display:inline-block;
+    }
+}

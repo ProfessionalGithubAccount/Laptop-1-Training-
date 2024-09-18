@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Poppins",sans-sarif;
+}
+
+html{
+scroll-behavior: smooth;
+/* Instead of directly going/jumping to that section this line helps in smooth scrollig toward a particular section*/
+}
+p{
+    color: rgb(85,85,85);
+}
+/* Transition */
+a,
+.btn{
+    transition: all 300ms ease;
+}
+/* Desktop nav */
+nav,.nav-links{
+    display: flex;
+/* flex helps in writing all the thinsg in one row ..instead of multiple rows */
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height:17vh; 
+    /* 17% of entire screen height will be tsaken by nav..in which the content will be at center of 17% portion of entire screen..if taken 100% ..then it will be at middle of enitre screen */
+}
+.nav-links{
+    gap:2rem;
+    list-style:none;
+    /* To remove bullets of the list  */
+    font-size:1rem;
+    /* rem is the measurement unit in frontend .similar to px */
+}
+a{
+    color:black;
+    text-decoration:none;
+    text-decoration-color: white;
+}
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    /* Till now we see a blue underline (since it is hyperlink to a section in html)..so now what we are doing is ..Only when someone hovers the underline gets visible  */
+    text-underline-offset: 1rem;
+    /* The underline without this above line of code is too tightly attached to the text ..now some space between text and underline */
+    text-decoration-color:rgb(101,101,101);
+
+}
+
+.logo{
+    font-size: 2rem;
+}
+/* Just increasing the size of the logo */
+
+.logo:hover{
+    cursor:default;
+    /* So before this line of code ..when we hover on the logo our cursor gets changed ..as if we are selecting the text for copy paste purpose */
+}
+
+/* Hamburger menu */
+#hamburger-nav{
+    display:none;
+    /* Hides the hamburger nav and div */
+}
+
+.hamburger-menu{
+    position:relative;
+    display:inline-block;
+}
+
+.hamburger-icon{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width:30px;
+    cursor:pointer;
+}
+.hamburger-icon span{
+width:100%;
+height:2px;
+background-color: black;
+transition:all 0.3 ease-in-out;
+/* This will create the cross mark for hamburger menu */
+}
+
+.menu-links{
+    position: absolute;
+    top:100%;
+    right:0;
+    background-color: white;
+    width:fit-content;
+    max-height: 0;
+    overflow:hidden;
+    transition: all 0.3 ease-in-out;
+
+}
+.menu-links a {
+    display: block;
+    padding:10px;
+    text-align:center;
+    font-size:1.5rem;
+    color:black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+/* the above two blocks of code helps in making the hamburger ...nothing but three lines/dashes at the side instead of names */
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+
+.hamburger-icon.open span:first-child{
+transform:rotate(45deg) translate(10px,5px);
+/* to change the three lines to a cross mark (x) */
+/* this is for  the first span element  or first dash */
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+    /* completely remove the second line */
+    /* this is for  the second span element  or second dash */
+}
+
+.hamburger-icon.open span:last-child{
+    transform:rotate(-45deg) translate(10px,-5px);
+        /* to change the three lines to a cross mark (x) */
+        /* this is for  the first span element  or third dash */
+}    
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+
+section{
+    padding-top:4vh;
+    height:96vh;
+    margin:0 10rem;
+    box-sizing:border-box;
+    min-height:fit-content;
+}
+
+.section-container{
+    display:flex;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+    height:80vh;
+}
+
+.section_pic-container{
+    display:flex;
+    height:400px;
+    width:400px;
+    margin: auto 0;
+    /* auto on top and 0 on sides */
+}
+
+.section_text{
+    align-self:center;
+    text-align:center;
+}
+.section_text p{
+    font-weight:600;
+}
+
+.section_text_p1{
+    text-align:center;
+}
+
+
+.section_text_p2{
+    font-size: 1.75rem;
+    margin-bottom:1rem;
+}
+
+.title{
+    font-size:3rem;
+    text-align:center;
+}
+
+.socials-container{
+    display:flex;
+    justify-content:center;
+    margin-top:1rem;
+    gap:1rem;
+}
+/* Icons */
+.icon{
+    cursor:pointer;
+    height:2rem;
+}
+/* Buttons */
+
+.btn-container{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding:1rem;
+    width:8rem;
+    border-radius:2rem;
+}
+
+.btn-color-1,
+.btn-color-2{
+    border:rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover{
+    cursor:pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover{
+    background:rgb(53,53,53);
+    color:white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0,0,0);
+}
+
+.btn-color-2{
+    background:none;
+}
+
+
+.btn-color-2:hover{
+    background: rgb(255,255,255) o.1rem solid;
+}
+
+.btn-container{
+    gap:1rem;
+}

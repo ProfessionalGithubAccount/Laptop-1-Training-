@@ -1,0 +1,9 @@
+Required things in personal portfolio
+1) Objective
+2) Image
+3) Education
+4) Projects
+5) Acheivements 
+6) Certifications
+7) profiles(github,linkedin,leetcode)
+8)
